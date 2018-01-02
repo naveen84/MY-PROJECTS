@@ -15,13 +15,14 @@
 <sql:query var="rs" dataSource="${ds}">
 select * from cities
 </sql:query>
+<select>
 <c:forEach var="cities" items="${rs.rows}">
 <%--<c:out value="${cities.boarding_point}"/>
 <c:out value="${cities.drop_point}"/> --%>
-<select>
-<option value="<c:out value="${cities.boarding_point}"/>"><c:out value="${cities.boarding_point}"/></option>
 
-</select>
+<option value="<c:out value="${cities.boarding_point}"/>"><c:out value="${cities.boarding_point}"/></option>
 </c:forEach>
+</select>
+
 </body>
 </html>
