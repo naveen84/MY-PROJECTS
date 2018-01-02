@@ -15,6 +15,7 @@ import com.naveen.model.User;
 @Controller
 public class UserController 
 {
+	//this is a second commit 
 	@Autowired
 	private UserDao dao;
 	@RequestMapping(value="/register",method=RequestMethod.POST)
